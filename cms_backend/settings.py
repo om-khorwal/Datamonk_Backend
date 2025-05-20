@@ -16,7 +16,7 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'  # now works correctly
 # Quick-start development settings - unsuitable for production
 SECRET_KEY = 'django-insecure-n*%l0!(n1)&c)=&8us%xb1_*zr5a2_79c)mv^@z87m*qacaayq'
 DEBUG = True
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["datamonk-backend.onrender.com"]
 
 # Application definition
 INSTALLED_APPS = [
