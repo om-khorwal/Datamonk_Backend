@@ -33,9 +33,9 @@ SECRET_KEY = 'django-insecure-n*%l0!(n1)&c)=&8us%xb1_*zr5a2_79c)mv^@z87m*qacaayq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*','datamonk-backend.onrender.com']
+ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = [
-    'https://datamonk-backend.onrender.com',       # for admin access
+    
     "https://datamonk.vercel.app/",
     "http://localhost:3000",
 ]
@@ -43,7 +43,6 @@ CSRF_TRUSTED_ORIGINS = [
 
 # Application definition
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-CORS_ALLOW_CREDENTIALS = True
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -69,7 +68,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-  ]
+]
 
 CORS_ALLOWED_ORIGINS = [
     "https://datamonk-backend.onrender.com",  # Backend (Render)
