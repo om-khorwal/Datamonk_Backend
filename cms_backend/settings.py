@@ -43,6 +43,7 @@ CSRF_TRUSTED_ORIGINS = [
 
 # Application definition
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+CORS_ALLOW_CREDENTIALS = True
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -68,7 +69,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-]
+  ]
 
 CORS_ALLOWED_ORIGINS = [
     "https://datamonk-backend.onrender.com",  # Backend (Render)
