@@ -27,8 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = [
-    "https://datamonk-backend.onrender.com",
-    "http://localhost:8000",
+    "https://datamonk.vercel.app/home",
+    "http://localhost:3000",
 ]
 
 
