@@ -70,6 +70,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
+    "https://datamonk-backend.onrender.com",  # Backend (Render)
     "https://datamonk.vercel.app",
     "http://localhost:3000",
 ]
