@@ -37,6 +37,7 @@ ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = [
     "https://datamonk.vercel.app/",
     "http://localhost:3000",
+    "*"
 ]
 
 
