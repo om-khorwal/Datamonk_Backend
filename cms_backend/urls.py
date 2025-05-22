@@ -19,9 +19,10 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blog/', include('blog.urls')),  # make sure this is here
+    path('blog/', include('blog.urls')),  # Important
 ]
 
 if settings.DEBUG:

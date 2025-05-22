@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 import os
 from pathlib import Path
+import dj_database_url
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -40,6 +41,9 @@ CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",
 ]
 
+DATABASES = {
+         'default': dj_database_url.config(default=os.environ.get('postgresql://datamonk_database_user:oZK7HgOixiAZQ7Kpu7LDqtFZM1KidPJX@dpg-d0na15gdl3ps73a15o0g-a/datamonk_database    '))
+     }
 
 # Application definition
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
