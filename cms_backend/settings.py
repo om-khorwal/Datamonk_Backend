@@ -47,6 +47,7 @@ DATABASES = {
 
 # Application definition
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+APPEND_SLASH = True  # this is the default in Django
 
 INSTALLED_APPS = [
     'django.contrib.admin',
