@@ -3,6 +3,5 @@ from .views import BlogPostList, BlogDetailView
 
 urlpatterns = [
     path('api/', BlogPostList.as_view(), name='blog-api'),
-    path('api/<int:pk>/', BlogDetailView.as_view(), name='blog-detail'),
+    path('blog/api/<int:id>/', BlogDetailView.as_view(), name='blog-detail'),
 ]
-    

@@ -12,3 +12,5 @@ class BlogDetailView(RetrieveAPIView):
     queryset = Blog.objects.all()
     serializer_class = BlogSerializer
     lookup_field = 'id'  # Ensure it matches the URL conf
+# views.py
+
